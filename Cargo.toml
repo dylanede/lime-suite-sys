@@ -1,0 +1,20 @@
+[package]
+name = "lime-suite-sys"
+version = "0.1.0"
+authors = ["Dylan Ede <dylanede@googlemail.com>"]
+links = "LimeSuite"
+build = "build.rs"
+
+exclude = [
+    "LimeSuite/docs/*",
+    "LimeSuite/octave/*",
+    "LimeSuite/src/boards_wxgui/*",
+    "LimeSuite/src/FPGAcontrols_wxgui/*",
+    "LimeSuite/src/fftviewer_wxgui/*",
+    "LimeSuite/src/oglGraph/*",
+    "LimeSuite/src/utilities_gui/*",
+    "LimeSuite/src/lms7002_wxgui/*"
+]
+
+[build-dependencies]
+cmake = "^0.1"
